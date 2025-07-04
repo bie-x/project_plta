@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulasi PLTA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simulasi PLTA</h1>
+    <p>Menghitung Daya & Estimasi Suplai Rumah</p>
+
+    <div class="form-group">
+      <label for="q">Debit Air (Q) m³/s</label>
+      <input id="q" type="number" placeholder="Contoh: 120" />
+    </div>
+
+    <div class="form-group">
+      <label for="h">Tinggi Air Terjun (H) m</label>
+      <input id="h" type="number" placeholder="Contoh: 200" />
+    </div>
+
+    <div class="form-group">
+      <label for="etaT">Efisiensi Turbin (ηT)</label>
+      <input id="etaT" type="number" step="0.01" placeholder="Contoh: 0.85" />
+    </div>
+
+    <div class="form-group">
+      <label for="etaG">Efisiensi Generator (ηG)</label>
+      <input id="etaG" type="number" step="0.01" placeholder="Contoh: 0.98" />
+    </div>
+
+    <button onclick="hitung()">Hitung Daya</button>
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
