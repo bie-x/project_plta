@@ -38,7 +38,6 @@ function hitung() {
   const energiPerHari = daya_kW * 24;
   const energiPerTahun = energiPerHari * 365;
 
-
   // Tampilkan hasil
   output.innerHTML = `
     <div class="success" style="text-align:left; margin-top:10px;">
