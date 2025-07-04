@@ -79,3 +79,35 @@ button:hover {
 #output .success {
   color: #15803d;
 }
+
+/* Untuk <ul> hasil simulasi */
+#output ul {
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Untuk <h3> di dalam output */
+#output h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #0f766e;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+/* Perbaikan warna latar untuk success dan error */
+#output .success {
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#output .error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 12px;
+  border-radius: 10px;
+}
