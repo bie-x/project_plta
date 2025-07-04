@@ -38,8 +38,6 @@ function hitung() {
   const energiPerHari = daya_kW * 24;
   const energiPerTahun = energiPerHari * 365;
 
-  // Estimasi pengurangan emisi CO2 (PLTU batu bara rata-rata 0.9 kg CO2/kWh)
-  const penguranganCO2 = energiPerTahun * 0.9 / 1000; // ton CO2/tahun
 
   // Tampilkan hasil
   output.innerHTML = `
@@ -50,7 +48,6 @@ function hitung() {
         <li><strong>Estimasi Rumah Terlayani:</strong> ${rumah} rumah</li>
         <li><strong>Energi Harian:</strong> ${energiPerHari.toLocaleString()} kWh</li>
         <li><strong>Energi Tahunan:</strong> ${energiPerTahun.toLocaleString()} kWh</li>
-        <li><strong>Pengurangan Emisi CO₂:</strong> ~${penguranganCO2.toFixed(1)} ton/tahun 🌱</li>
       </ul>
     </div>
   `;
