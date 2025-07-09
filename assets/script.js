@@ -1,9 +1,9 @@
-function hitung() {
-  const q = parseFloat(document.getElementById('q').value);
-  const h = parseFloat(document.getElementById('h').value);
-  const etaT = parseFloat(document.getElementById('etaT').value);
-  const etaG = parseFloat(document.getElementById('etaG').value);
-  const output = document.getElementById('output');
+function hitungDaya() {
+  const q = parseFloat(document.getElementById('debit').value);
+  const h = parseFloat(document.getElementById('tinggi').value);
+  const etaT = parseFloat(document.getElementById('turbin').value);
+  const etaG = parseFloat(document.getElementById('generator').value);
+  const output = document.getElementById('hasil');
 
   if (
     isNaN(q) || isNaN(h) || isNaN(etaT) || isNaN(etaG) ||
