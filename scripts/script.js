@@ -23,22 +23,15 @@ function hitungDaya() {
     return;
   }
 
-  // Konstanta
-  const rho = 1000; // kg/m³
-  const g = 9.8;    // m/s²
+  const rho = 1000;
+  const g = 9.8;
 
-  // Hitung daya listrik dalam kW dan MW
   const daya_kW = (rho * g * q * h * etaT * etaG) / 1000;
   const daya_MW = daya_kW / 1000;
-
-  // Estimasi rumah yang bisa disuplai (1 rumah ≈ 2 kW)
   const rumah = Math.floor(daya_kW / 2);
-
-  // Energi per hari dan tahun (dalam kWh)
   const energiPerHari = daya_kW * 24;
   const energiPerTahun = energiPerHari * 365;
 
-  // Tampilkan hasil
   output.innerHTML = `
     <div class="success" style="text-align:left; margin-top:10px;">
       <h3>💡 Hasil Simulasi</h3>
