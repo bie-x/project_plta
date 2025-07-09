@@ -13,16 +13,16 @@
 
     <form id="pltaForm">
       <label>Debit Air (Q) m<sup>3</sup>/s</label>
-      <input type="number" id="debit" value="20" step="0.1" min="0" placeholder="Contoh: 50">
+      <input type="number" id="debit" step="0.1" min="0" placeholder="Contoh: 50">
 
       <label>Tinggi Air Terjun (H) m</label>
-      <input type="number" id="tinggi" value="20" step="0.1" min="0" placeholder="Contoh: 80">
+      <input type="number" id="tinggi" step="0.1" min="0" placeholder="Contoh: 80">
 
       <label>Efisiensi Turbin (ηT)</label>
-      <input type="number" id="turbin" value="0.85" step="0.01" min="0" max="1" placeholder="Contoh: 0.80">
+      <input type="number" id="turbin" step="0.01" min="0" max="1" placeholder="Contoh: 0.80">
 
       <label>Efisiensi Generator (ηG)</label>
-      <input type="number" id="generator" value="0.99" step="0.01" min="0" max="1" placeholder="Contoh: 0.95">
+      <input type="number" id="generator" step="0.01" min="0" max="1" placeholder="Contoh: 0.95">
 
       <button type="button" onclick="hitungDaya()">Hitung Daya</button>
     </form>
