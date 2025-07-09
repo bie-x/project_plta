@@ -1,0 +1,162 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #00796b;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f57c00;
+    }
+
+    .hasil {
+      margin-top: 30px;
+      background-color: #e0f2f1;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .animasi {
+      margin-top: 40px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .animasi img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 45px;
+      left: 115px;
+      width: 0; 
+      height: 0; 
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 20px solid #2196f3;
+      animation: turun 1.5s linear infinite;
+    }
+
+    @keyframes turun {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(40px); opacity: 0; }
+    }
+
+    .animation-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .flow-particle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: solid transparent;
+      border-width: 0 5px 10px 5px;
+      border-bottom-color: #4DD0E1;
+      opacity: 0.8;
+      z-index: 10;
+    }
+
+    .hasil {
+      margin-top: 30px;
+      background-color: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      padding: 20px;
+      border-radius: 10px;
+      color: #065f46;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .hasil h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #0f766e;
+      border-bottom: 1px solid #d1fae5;
+      padding-bottom: 6px;
+    }
+
+    .hasil ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .hasil li strong {
+      color: #064e3b;
+    }
+
+    .animasi {
+      margin-top: 40px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: auto;
+    }
+
+    .animasi img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .animation-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
